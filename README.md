@@ -2,7 +2,10 @@
 
 > [Yeoman](http://yeoman.io) generator that scaffolds out a very basic [leaflet](http://leafletjs.com) map application.
 
-## Under Construction!
+## Requirements
+
+You need Yeoman in order to run the leaflet generator.
+Install yeoman with `npm install -g yo`
 
 ## Getting Started
 
