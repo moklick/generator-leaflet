@@ -1,6 +1,6 @@
 {
   "name": "generator-leaflet",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Yeoman generator that scaffolds out a very basic leaflet map application.",
   "license": "MIT",
   "main": "app/index.js",
@@ -24,7 +24,8 @@
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
-    "chalk": "~0.4.0"
+    "chalk": "~0.4.0",
+    "fs-extra": "~0.8.1"
   },
   "devDependencies": {
     "mocha": "*"

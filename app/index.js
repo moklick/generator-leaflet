@@ -1,9 +1,10 @@
 'use strict';
-var util = require('util');
-var path = require('path');
-var yeoman = require('yeoman-generator');
-var chalk = require('chalk');
-var exec = require('child_process').exec;
+var util = require('util'),
+  path = require('path'),
+  yeoman = require('yeoman-generator'),
+  chalk = require('chalk'),
+  fse = require('fs-extra'),
+  exec = require('child_process').exec;
 
 var LeafletGenerator = yeoman.generators.Base.extend({
   init: function () {
@@ -24,11 +25,11 @@ var LeafletGenerator = yeoman.generators.Base.extend({
       console.log('copy leaflet dependencies ...');
       this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.js', 'app/lib/scripts/leaflet.js']);
       this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.css', 'app/lib/styles/leaflet.css']);
-      //this.spawnCommand('cp' , ['node_modules/leaflet/dist/images/*', 'app/lib/images/']);
-      //this.copy('node_modules/leaflet/dist/images/*', 'app/lib/images/');
-     exec('cp node_modules/leaflet/dist/images/* app/lib/images/', function(err,out){
+      fse.copy('node_modules/leaflet/dist/images', 'app/lib/images', function(err){
+        if (err) return console.error(err);
+        // successfully copied leaflet files
+      });
 
-     });
     }.bind(this));
  
   },
