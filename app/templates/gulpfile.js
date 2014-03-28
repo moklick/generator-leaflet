@@ -47,7 +47,7 @@ gulp.task('html', ['styles', 'scripts'], function () {
 gulp.task('images', function () {
     return gulp.src([
     		'app/images/**/*',
-    		'lib/images/*'])
+    		'app/lib/images/*'])
         .pipe($.cache($.imagemin({
             optimizationLevel: 3,
             progressive: true,

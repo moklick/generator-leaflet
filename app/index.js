@@ -93,7 +93,6 @@ var LeafletGenerator = yeoman.generators.Base.extend({
     this.copy('gitignore', '.gitignore');
     this.copy('jshintrc', '.jshintrc');
     this.copy('robots.txt', 'app/robots.txt');
-
   },
 
   leafletWelcome : function(){
