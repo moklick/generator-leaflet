@@ -2,6 +2,13 @@
 
 > [Yeoman](http://yeoman.io) generator that scaffolds out a very basic [leaflet](http://leafletjs.com) map application.
 
+## Features
+* basic map with a [stamen](http://maps.stamen.com) layer as default
+* [TopoJSON](https://github.com/mbostock/topojson) support
+* ready to go dev environment managed with gulp
+* auto reload (gulp-connect)
+* css, js and image minification (gulp-ccso, gulp-uglify, gulp-imagemin)
+
 ### Requirements
 
 You need Yeoman in order to run the leaflet generator.
