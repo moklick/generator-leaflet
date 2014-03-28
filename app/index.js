@@ -22,8 +22,8 @@ var LeafletGenerator = yeoman.generators.Base.extend({
     
     this.on('depsInstalled', function(){
       console.log('copy leaflet dependencies...');
-      this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.js', 'app/scripts/leaflet.js']);
-      this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.css', 'app/styles/leaflet.css']);
+      this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.js', 'app/scripts/lib/leaflet.js']);
+      this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.css', 'app/styles/lib/leaflet.css']);
     }.bind(this));
  
   },
@@ -73,6 +73,7 @@ var LeafletGenerator = yeoman.generators.Base.extend({
     this.mkdir('app');
     this.mkdir('app/styles');
     this.mkdir('app/scripts');
+    this.mkdir('app/scripts/lib');
     this.mkdir('app/images');
     this.template('gulpfile.js', 'gulpfile.js');
     this.template('index.html', 'app/index.html');
