@@ -1,7 +1,7 @@
 {
   "name": "generator-leaflet",
   "version": "0.0.0",
-  "description": "Yeoman generator that scaffolds a leaflet map application.",
+  "description": "Yeoman generator that scaffolds a very basic leaflet map application.",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "moklick/generator-leaflet",
@@ -20,7 +20,7 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator", "leaflet", "map"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
