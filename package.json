@@ -1,6 +1,6 @@
 {
   "name": "generator-leaflet",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Yeoman generator that scaffolds out a very basic leaflet map application.",
   "license": "MIT",
   "main": "app/index.js",

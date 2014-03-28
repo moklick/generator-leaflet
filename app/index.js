@@ -21,10 +21,14 @@ var LeafletGenerator = yeoman.generators.Base.extend({
 
     
     this.on('depsInstalled', function(){
-      console.log('copy leaflet dependencies...');
+      console.log('copy leaflet dependencies ...');
       this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.js', 'app/lib/scripts/leaflet.js']);
       this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.css', 'app/lib/styles/leaflet.css']);
-      this.spawnCommand('cp' , ['node_modules/leaflet/dist/images/*', 'app/lib/images/']);
+      //this.spawnCommand('cp' , ['node_modules/leaflet/dist/images/*', 'app/lib/images/']);
+      //this.copy('node_modules/leaflet/dist/images/*', 'app/lib/images/');
+     exec('cp node_modules/leaflet/dist/images/* app/lib/images/', function(err,out){
+
+     });
     }.bind(this));
  
   },
