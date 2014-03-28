@@ -10,7 +10,8 @@ Install Yeoman with `npm install -g yo`
 ## Getting Started
 
 - Install: `npm install -g generator-leaflet`
-- Run: `yo leaflet`
+- Create Folder: `mkdir my-map-app && cd my-map-app`
+- Scaffold App: `yo leaflet`
 - Run `gulp` for building and `gulp watch` for preview
 
 
