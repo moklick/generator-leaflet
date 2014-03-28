@@ -10,7 +10,7 @@ var $ = require('gulp-load-plugins')();
 
 // Styles
 gulp.task('styles', function () {
-    return gulp.src(['app/styles/main.css', 'node_modules/leaflet/dist/leaflet.css'])
+    return gulp.src(['app/styles/main.css'])
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('app/styles'))
         .pipe($.size());
@@ -18,7 +18,7 @@ gulp.task('styles', function () {
 
 // Scripts
 gulp.task('scripts', function () {
-    return gulp.src(['app/scripts/**/*.js','node_modules/leaflet/dist/leaflet.js'])
+    return gulp.src(['app/scripts/**/*.js'])
         .pipe($.jshint('.jshintrc'))
         .pipe($.jshint.reporter('default'))
         .pipe($.size());
