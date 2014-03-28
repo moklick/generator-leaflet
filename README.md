@@ -2,27 +2,12 @@
 
 > [Yeoman](http://yeoman.io) generator that scaffolds out a very basic leaflet map application.
 
-### Installation
+## Getting Started
 
-```
-$ npm install -g generator-leaflet
-```
+- Install: `npm install -g generator-gulp-webapp`
+- Run: `yo gulp-webapp`
+- Run `gulp` for building and `gulp watch` for preview
 
-### Scaffolding Map Application
-
-```
-$ yo leaflet
-```
-
-### Build
-```
-$ gulp
-```
-
-### Start server for preview
-```
-$ gulp watch
-```
 
 ## License
 
