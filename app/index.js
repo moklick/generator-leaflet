@@ -72,6 +72,7 @@ var LeafletGenerator = yeoman.generators.Base.extend({
   app: function () {
     this.mkdir('app');
     this.mkdir('app/styles');
+    this.mkdir('app/styles/lib');
     this.mkdir('app/scripts');
     this.mkdir('app/scripts/lib');
     this.mkdir('app/images');
