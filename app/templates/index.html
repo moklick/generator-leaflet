@@ -8,14 +8,15 @@
 	<title><%= appName %></title>
 	<meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    
     <!-- build:css styles/vendor.css -->
-    	<!-- bower:css -->
-	<link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css">
-    	<!-- endbower -->
+    <!-- bower:css -->
+    <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
+   
+   	<!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
     <link rel="shortcut icon" href="/favicon.ico">
 
 </head>
@@ -31,16 +32,13 @@
 		<div id="map" class="map"></div>
 	</div>
 	 <!-- build:js scripts/vendor.js -->
-	 <script src="../node_modules/leaflet/dist/leaflet.js"></script>
-
      <!-- bower:js -->
      <% if(jquery){%><script src="bower_components/jquery/dist/jquery.js"></script><%}%>
-     
-	
 	<% if(topoJson){%>
 	<script src="bower_components/topojson/topojson.js"></script>
 	<script>
 		// Copyright (c) 2013 Ryan Clark, https://gist.github.com/rclark/5779673 
+		console.log(topojson);
 		L.TopoJSON = L.GeoJSON.extend({
 			addData: function(jsonData){
 				if(jsonData.type === "Topology") {

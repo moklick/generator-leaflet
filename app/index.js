@@ -21,10 +21,10 @@ var LeafletGenerator = yeoman.generators.Base.extend({
 
     this.on('depsInstalled', function(){
       // TODO: print some more infos here, can we use exec here?
-      console.log('Building leaflet...');
+      /*console.log('Building leaflet...');
       exec('cd bower_components/leaflet && npm install', function(error, stdout, stderr){
         console.log(stdout);
-      }.bind(this));
+      }.bind(this));*/
     });
   },
 
