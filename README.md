@@ -1,6 +1,6 @@
 # generator-leaflet
 
-> [Yeoman](http://yeoman.io) generator that scaffolds out a very basic leaflet map application.
+> [Yeoman](http://yeoman.io) generator that scaffolds out a very basic [leaflet](http://leafletjs.com) map application.
 
 ## Getting Started
 
