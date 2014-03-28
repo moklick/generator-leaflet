@@ -1,0 +1,10 @@
+{
+  "name": "<%= _.slugify(appName) %>",
+  "version": "0.0.0",
+  "dependencies": {
+  	<% if(topoJson){ %>
+  	"topojson": "~1.5.2"<%}if(jquery){%>,
+  	"jquery": "~2.1.0"<%}%>	
+  }
+}
+
