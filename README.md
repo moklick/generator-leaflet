@@ -1,4 +1,4 @@
-# generator-leaflet [![Build Status](https://secure.travis-ci.org/moklick/generator-leaflet.png?branch=master)](https://travis-ci.org/moklick/generator-leaflet)
+# generator-leaflet
 
 > [Yeoman](http://yeoman.io) generator
 
