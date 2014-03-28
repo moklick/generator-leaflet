@@ -14,6 +14,9 @@ Install Yeoman with `npm install -g yo`
 - Scaffold App: `yo leaflet`
 - Run `gulp` for building and `gulp watch` for preview
 
+## Example
+
+This is what you get, after building the app [Example Map Application](http://leaf-gen.moritzklack.com/). Moreover you can enable [TopoJSON](https://github.com/mbostock/topojson) support and jQuery if you need it.
 
 ## License
 
