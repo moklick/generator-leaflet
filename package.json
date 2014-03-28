@@ -20,7 +20,7 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator", "leaflet", "map"
+    "yeoman-generator", "leaflet", "map", "gulp"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
