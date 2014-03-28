@@ -4,8 +4,8 @@
 
 ## Getting Started
 
-- Install: `npm install -g generator-gulp-webapp`
-- Run: `yo gulp-webapp`
+- Install: `npm install -g generator-leaflet`
+- Run: `yo leaflet`
 - Run `gulp` for building and `gulp watch` for preview
 
 
