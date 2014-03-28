@@ -22,8 +22,9 @@ var LeafletGenerator = yeoman.generators.Base.extend({
     
     this.on('depsInstalled', function(){
       console.log('copy leaflet dependencies...');
-      this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.js', 'app/scripts/lib/leaflet.js']);
-      this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.css', 'app/styles/lib/leaflet.css']);
+      this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.js', 'app/lib/scripts/leaflet.js']);
+      this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.css', 'app/lib/styles/leaflet.css']);
+      this.spawnCommand('cp' , ['node_modules/leaflet/dist/images/*', 'app/lib/images/']);
     }.bind(this));
  
   },
@@ -71,11 +72,14 @@ var LeafletGenerator = yeoman.generators.Base.extend({
 
   app: function () {
     this.mkdir('app');
+    this.mkdir('app/lib');
     this.mkdir('app/styles');
-    this.mkdir('app/styles/lib');
     this.mkdir('app/scripts');
-    this.mkdir('app/scripts/lib');
     this.mkdir('app/images');
+    /* folders for leaflet stuff */
+    this.mkdir('app/lib/styles');
+    this.mkdir('app/lib/scripts');
+    this.mkdir('app/lib/images');
     this.template('gulpfile.js', 'gulpfile.js');
     this.template('index.html', 'app/index.html');
     this.template('style.css', 'app/styles/main.css');
