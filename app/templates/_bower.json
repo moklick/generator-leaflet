@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
   	<% if(topoJson){ %>
-  	"topojson": "~1.5.2"<%}if(jquery){%>,
+  	"topojson": "~1.5.2"<%} if(jquery && topoJson){%>,<%}%>
+  	<%if(jquery){%>
   	"jquery": "~2.1.0"<%}%>	
   }
 }
