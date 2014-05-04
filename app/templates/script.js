@@ -1,3 +1,6 @@
+/*jslint browser: true*/
+/*global L */
+
 (function (window, document, L, undefined) {
 	'use strict';
 
