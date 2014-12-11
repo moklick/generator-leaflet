@@ -25,7 +25,7 @@ var LeafletGenerator = yeoman.generators.Base.extend({
       console.log('copy leaflet dependencies ...');
       this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.js', 'app/lib/scripts/leaflet.js']);
       this.spawnCommand('cp' , ['node_modules/leaflet/dist/leaflet.css', 'app/lib/styles/leaflet.css']);
-      fse.copy('node_modules/leaflet/dist/images', 'app/lib/images', function(err){
+      fse.copy('node_modules/leaflet/dist/images', 'app/images', function(err){
         if (err) return console.error(err);
         // successfully copied leaflet files
       });
@@ -84,7 +84,6 @@ var LeafletGenerator = yeoman.generators.Base.extend({
     /* folders for leaflet stuff */
     this.mkdir('app/lib/styles');
     this.mkdir('app/lib/scripts');
-    this.mkdir('app/lib/images');
     this.template('gulpfile.js', 'gulpfile.js');
     this.template('index.html', 'app/index.html');
     this.template('style.css', 'app/styles/main.css');

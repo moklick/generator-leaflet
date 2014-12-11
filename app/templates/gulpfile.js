@@ -48,11 +48,6 @@ gulp.task('images', function () {
     return gulp.src([
     		'app/images/**/*',
     		'app/lib/images/*'])
-        .pipe($.cache($.imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            interlaced: true
-        })))
         .pipe(gulp.dest('dist/images'))
         .pipe($.size());
 });
@@ -110,7 +105,6 @@ gulp.task('watch', ['connect', 'serve'], function () {
         'app/scripts/**/*.js',
         'app/images/**/*'
     ], function (event) {
-    	console.log('reload');
         return gulp.src(event.path)
             .pipe($.connect.reload());
     });
