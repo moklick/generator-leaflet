@@ -7,7 +7,6 @@
 * [TopoJSON](https://github.com/mbostock/topojson) support (optional)
 * Dev environment managed with [gulp](http://gulpjs.com/)
 * Auto reload (gulp-connect)
-* CSS, JS and image minification (gulp-ccso, gulp-uglify, gulp-imagemin)
 
 ### Requirements
 
